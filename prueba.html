@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mi primer sitio con Tailwind</title>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="container mx-auto mt-5 text-center">
+    <div class="grid grid-cols-3 gap-4 my-2">
+        <div class="bg-red-400">A</div>
+        <div class="bg-red-400">A</div>
+        <div class="bg-red-400">A</div>
+        <div class="bg-red-400">A</div>
+        <div class="bg-red-400">A</div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4 my-2">
+        <div class="bg-blue-400">A</div>
+        <div class="bg-blue-400">A</div>
+        <div class="bg-blue-400">A</div>
+        <div class="bg-blue-400">A</div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-7 my-2">
+        <div class="bg-pink-400 col-span-2">B</div>
+        <div class="bg-pink-400">A</div>
+        <div class="bg-pink-400">A</div>
+        <div class="bg-pink-400 col-span-3">D</div>
+    </div>
+    <div class="grid grid-cols-12 gap-7 my-2">
+        <div class="bg-orange-400">A</div>
+        <div class="bg-orange-400">A</div>
+        <div class="bg-orange-400">A</div>
+        <div class="bg-orange-400">A</div>
+        <div class="bg-orange-400">A</div>
+        <div class="bg-orange-400">A</div>
+        <div class="bg-orange-400">A</div>
+        <div class="bg-orange-400">A</div>
+        <div class="bg-orange-400">A</div>
+        <div class="bg-orange-400">A</div>
+        <div class="bg-orange-400">A</div>
+        <div class="bg-orange-400">A</div>
+    </div>
+    <div class="grid grid-cols-12 gap-7 my-2">
+        <div class="bg-yellow-400 col-start-2">A</div>
+        <div class="bg-yellow-400">A</div>
+        <div class="bg-yellow-400 col-end-8">A</div>
+
+    </div>
+</body>
+
+</html>

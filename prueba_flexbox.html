@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mi primer sitio con Tailwind</title>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="container mx-auto mt-5 text-center">
+    <div class="flex flex-row-reverse">
+        <div class="bg-blue-500 p-4 m-3">1</div>
+        <div class="bg-blue-500 p-4 m-3">2</div>
+        <div class="bg-blue-500 p-4 m-3">3</div>
+
+    </div>
+</body>
+
+</html>
